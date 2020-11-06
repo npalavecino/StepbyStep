@@ -70,10 +70,21 @@ $ git pull
 $ git merge {bookmark} {branch}
 
 
+## Guardar fragmentos ## 
+
+$ git stash // almacena temporalmente todos los archivos tracked modificados.
+$ git stash pop  // restaura los archivos guardados mas reciente
+$ git stash list // enumera todos los sets de cambios en guardado rapido
+$ git stash drop   // elimina el set de cambios en guardado rapido mas reciente.
+
+
+
 ## Comandos Varios ## 
 
 $ git remote -v 
-$ git 
+$ git rebase master  // aplicar rebase para traer los cambios de otra rama. rebase es una mala practica. 
+
+
 
 
 
