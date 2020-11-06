@@ -83,7 +83,14 @@ $ git stash drop   // elimina el set de cambios en guardado rapido mas reciente.
 
 $ git remote -v 
 $ git rebase master  // aplicar rebase para traer los cambios de otra rama. rebase es una mala practica. 
-
+$ git clean --dry-run 
+$ git clean -f  
+$ git cherry-pick {IDCommit}  // traer commit  viejos de otra rama a master. - mala practica.
+$ git commit --amend  // enmendar error al hacer commit - pega nuevo commit al anterior.
+$ git reflog // registros de head completo
+$ git reset --soft {idhas}
+$ git reset --hard {idhas}
+$ git grep -n
 
 
 
