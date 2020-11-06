@@ -92,9 +92,45 @@ $ git reset --soft {idhas}
 $ git reset --hard {idhas}
 $ git grep -n
 
+*/  Comandos Linux   *\
 
 
 
+
+
+
+
+*/ Comandos Postgresql \*
+
+
+
+
+*/Administración APACHE WEB *\
+
+
+
+## Analisis de falla ## 
+
+1.- Revisar NAT de IP publica a IP virtual balanceador
+2.- Revisar Registro DNS tip ns en ds1.
+3.- Revisar Selinux e iptables, firewalld. 
+4.- Revisar comunicacion con la aplicacion
+5.- 
+
+
+Capa WEB 
+
+$ tcping {IP Instancias}  8080
+$ tcping {IP Instancias}  8009  // revisar puertos para instacias 
+
+$ watch tcping -t 2 {IP Publica} 80  // revisar flujo de trabajo capa web - Nose debe caer puerto revisión de balanceo.
+
+$ ip a // revisar interfaz dummy0 ansible no la levanta correctamente 06-11-2020 
+$ nmcli con add type dummy ifname dummy0 ipv4.addresses 192.168.15.57/32 ipv4.method static  // comando despliegue interfaz.
+
+
+
+f
 
 
 
