@@ -70,4 +70,15 @@ $ git pull
 $ git merge {bookmark} {branch}
 
 
+## Comandos Varios ## 
+
+$ git remote -v 
+$ git 
+
+
+
+
+
+
+
 
