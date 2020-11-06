@@ -1,0 +1,73 @@
+
+###### Trabajo diario ########
+###   Nicolás Palavecino   ###
+###     05-11-2020         ###
+###                        ###
+###  Procedimiento Varios  ###
+##############################
+
+
+
+*/ Comandos de administración GIT \*
+
+## Configuración de herramienta GIT ##
+
+$ git config --global username "Nicolás Palavecino"  // establecer usuario
+$ git config --global user.mail "palavecino.tdm@gmail.com" // establecer Mail
+$ git config --global color.ui auto  // habilitar el color 
+
+
+## Creador de repositorios ## 
+
+$ git init {project-name}
+$ git clone {url}
+
+
+## Efectuar Cambios ## 
+
+$ git status // enumera todos los archivos nuevos o modificados
+$ git diff  // muestra las diferencias de archivos que no se hab enviado aun al area de espera
+$ git add {file}  // toma una instantanea del archivo para preparar la version
+$ git diff --staged  //muestra las diferencias del archivo entre el area de espera y la ultima version
+$ git reset {file}  // mueve el archivo del area de espera
+$ git commit -m "escribe un mensaje"
+
+
+## Cambios Grupales ##
+
+$ git branch // enumera todas la ramas en el repositorios
+$ git branch {nombre-branch} // crear rama nueva
+$ git checkout {nombre-branch}  // cambiarse de rama especifica
+$ git merge branch -d {nombre-branch}  // borrar rama especifica
+
+
+## Nombres del archivos de refactorización ##
+
+$ git rm {archivo}  //borra el archivo del directorio y pone en el area de espera el archivo borrado.
+$ git rm --cached  {archivo}  // retira el archivo  del control de versione pero preseversa el archivo a nivel local.
+$ git mv {archivo original} {archivo-renombrado}
+
+
+## Repasar Historial ##
+
+$ git log  // enumera el historial de la version
+$ git log --follow {archivo}
+$ git diff {first-branch} {second-branch}  // muestra las diferencias
+$ git show {commit}  // produce metadatos y cambios de contenido del commit especificado.
+
+
+## Rehacer commit ## 
+
+$ git reset {commit} // deshace todos los commit despues de {commit} preservenda los cambios localmente
+$ git reset --hard {commit}  // decha todo el historial y regresa al commit especificado.
+
+
+## Sincronizar Cambios ## 
+
+$ git fetch {bookmark}  // descarga todo el historial del marcador del repositorios
+$ git push {alias} {branch}
+$ git pull 
+$ git merge {bookmark} {branch}
+
+
+
