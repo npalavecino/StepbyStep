@@ -130,7 +130,15 @@ $ nmcli con add type dummy ifname dummy0 ipv4.addresses 192.168.15.57/32 ipv4.me
 
 
 
-f
+*/ MULE \*
+
+ERROR:  [client 190.14.56.98:36256] AH01114: HTTP: failed to make connection to backend: soa1.test.b2blinkcl.b2b, referer: https://test.b2blink.bbr.cl/doLogonUser
+
+$ revisar servicio Mule --> puerto de conexion no levanta.
+$ Permisos  directorio Mule. 
+
+
+
 
 
 
