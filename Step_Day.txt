@@ -23,7 +23,7 @@ $ git init {project-name}
 $ git clone {url}
 
 
-## Efectuar Cambios ## 
+ Efectuar Cambios ## 
 
 $ git status // enumera todos los archivos nuevos o modificados
 $ git diff  // muestra las diferencias de archivos que no se hab enviado aun al area de espera
@@ -141,6 +141,6 @@ $ Permisos  directorio Mule.
 
 
 
-
+xxxxxxxxx error xxx
 
 
